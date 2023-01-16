@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Автошкола 100</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-container container d-flex">
+        <a class="col-3" href=""><img class="header__logo col-12" src="assets/images/logo.webp" alt="Лого"></a>
+<!--        <nav class="navigation col-xxl-5 col-xl-4 col-lg-5">-->
+<!--            <ul class="d-flex h-100 justify-content-around align-items-center">-->
+<!--                <li class="navigation__link navigation__link_active"><a href="">Главная</a></li>-->
+<!--                <li class="navigation__link"><a href="">Этапы</a></li>-->
+<!--                <li class="navigation__link"><a href="">Услуги</a></li>-->
+<!--                <li class="navigation__link"><a href="">Филиалы</a></li>-->
+<!--                <li class="navigation__link"><a href="">Отзывы</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+        <nav class="navigation navbar navbar-expand-lg navbar-light bg-light col-5 col-xxl-5 col-xl-4 col-lg-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="navbar-svg" width="56" height="26" viewBox="0 0 56 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="2.5" x2="56" y2="2.5" stroke="black" stroke-width="5"/>
+                        <line y1="23.5" x2="56" y2="23.5" stroke="black" stroke-width="5"/>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-around align-items-center">
+                        <li class="navigation__link navigation__link_active nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="navigation__link nav-item">
+                            <a class="nav-link" href="#">Этапы</a>
+                        </li>
+                        <li class="navigation__link nav-item">
+                            <a class="nav-link" href="#">Услуги</a>
+                        </li>
+                        <li class="navigation__link nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Филиалы</a>
+                        </li>
+                        <li class="navigation__link nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header__contacts">
+            <p class="contacts__phone text-end"><a class="phone__link" href="tel:+74995473223">+7 (499) 547-32-23</a>
+            </p>
+            <ul class="d-flex contacts__social justify-content-end">
+                <li class="contacts__social-container"><a href=""><img src="assets/icons/vk.svg" alt="vk"></a></li>
+                <li class="contacts__social-container"><a href=""><img src="assets/icons/instagram.svg" alt="instagram"></a>
+                </li>
+                <li class="contacts__social-container"><a href=""><img src="assets/icons/telegram.svg"
+                                                                       alt="telegram"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="autoschool">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="autoschool-content col-xxl-7 col-xl-6">
+                <h1 class="autoschool__title">Автошкола 100.рф</h1>
+                <p class="autoschool__description">Права за 3 месяца, практика с первых дней
+                    <br>Онлайн и оффлайн обучение водителей категорий А и B
+                    <br>Оборудованные учебные классы и автодромы возле метро
+                    <br>Практика по экзаменационным маршрутам ГИБДД</p>
+                <a class="link" href="">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+    <section class="why-we">
+        <div class="container">
+            <h3 class="title-h3 title-h3_white text-center">Почему выбирают нас</h3>
+            <ul class="why-we__ul d-flex flex-wrap p-0 justify-content-xl-center justify-content-lg-around">
+                <li class="why-we__card-container col-xxl-4 col-lg-5 col-md-12">
+                    <div class="why-we__card d-flex align-items-center mx-md-auto">
+                        <p class="why-we__text">Высокое качество обучения на права в СПб</p>
+                        <img class="why-we__image" src="assets/images/why-we/books.webp" alt="Обучение">
+                    </div>
+                </li>
+                <li class="why-we__card-container col-xxl-4 col-lg-5 col-md-12">
+                    <div class="why-we__card d-flex align-items-center mx-md-auto">
+                        <p class="why-we__text">Есть выбор, на каком авто учиться: с АКПП / МКПП</p>
+                        <img class="why-we__image" src="assets/images/why-we/steering-wheel.webp" alt="АКПП/МКПП">
+                    </div>
+                </li>
+                <li class="why-we__card-container col-xxl-4 col-lg-5 col-md-12">
+                    <div class="why-we__card d-flex align-items-center mx-md-auto">
+                        <p class="why-we__text">Новые машины
+                            и мотоциклы</p>
+                        <img class="why-we__image" src="assets/images/why-we/wheel.webp" alt="Машины">
+                    </div>
+                </li>
+                <li class="why-we__card-container col-xxl-4 col-lg-5 col-md-12">
+                    <div class="why-we__card d-flex align-items-center mx-md-auto">
+                        <p class="why-we__text">Доступная стоимость обучения в автошколе</p>
+                        <img class="why-we__image" src="assets/images/why-we/money.webp" alt="Стоимость">
+                    </div>
+                </li>
+                <li class="why-we__card-container col-xxl-4 col-lg-5 col-md-12">
+                    <div class="why-we__card d-flex align-items-center mx-md-auto">
+                        <p class="why-we__text">Лучшие инструкторы по вождению в СПб</p>
+                        <img class="why-we__image" src="assets/images/why-we/man.webp" alt="Инструктор">
+                    </div>
+                </li>
+                <li class="why-we__card-container col-xxl-4 col-lg-5 col-md-12">
+                    <div class="why-we__card d-flex align-items-center mx-md-auto">
+                        <p class="why-we__text">Объясняем теорию на пальцах, много практики</p>
+                        <img class="why-we__image" src="assets/images/why-we/book.webp" alt="Теория">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="studying">
+        <div class="container">
+            <h3 class="title-h3 text-center">Как проходит обучение</h3>
+            <ul class="steps-ul d-flex flex-column justify-content-end p-0">
+                <li class="steps-ul__li d-flex">
+                    <ul class="steps-ul__container d-flex col-lg-6 col-md-12 p-0">
+                        <li class="col-6"><img class="col-12" src="assets/images/studying/woman.webp" alt="За рулем">
+                        </li>
+                        <li class="d-flex col-6 flex-column justify-content-center">
+                            <h5 class="studying__subtitle">1. Заявка</h5>
+                            <p class="studying__description">Оставляете заявку на обучение на категорию A или B,
+                                подписываете договор, оплачиваете
+                                поэтапно.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="steps-ul__li d-flex">
+                    <div class="col-2 d-lg-block d-md-none"></div>
+                    <ul class="steps-ul__container d-flex col-lg-6 col-md-12 p-0">
+                        <li class="col-6"><img class="col-12" src="assets/images/studying/studying.webp" alt="Обучение">
+                        </li>
+                        <li class="d-flex col-6 flex-column justify-content-center">
+                            <h5 class="studying__subtitle">2. Обучение</h5>
+                            <p class="studying__description">Проходите курсы водителей категории B или A (теория,
+                                практика) в удобном формате и
+                                филиале.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="steps-ul__li d-flex">
+                    <div class="col-4 d-lg-block d-md-none"></div>
+                    <ul class="steps-ul__container d-flex col-lg-6 col-md-12 p-0">
+                        <li class="col-6"><img class="col-12" src="assets/images/studying/exam.webp" alt="Экзамен"></li>
+                        <li class="d-flex col-6 flex-column justify-content-center">
+                            <h5 class="studying__subtitle">3. Экзамен</h5>
+                            <p class="studying__description">Окончив курс обучения на права категории В/А, сдаете
+                                экзамен в ГИБДД (теория, автодром,
+                                город).</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="steps-ul__li d-flex">
+                    <div class="col-6 d-lg-block d-md-none"></div>
+                    <ul class="steps-ul__container d-flex col-lg-6 col-md-12 p-0">
+                        <li class="col-6"><img class="col-12" src="assets/images/studying/rights.webp" alt="Права"></li>
+                        <li class="d-flex col-6 flex-column justify-content-center">
+                            <h5 class="studying__subtitle">4. Права</h5>
+                            <p class="studying__description">Успешно сдав экзамены, получаете права на мотоцикл или
+                                автомобиль.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-center">
+                <a class="link" href="">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container">
+            <h3 class="title-h3 text-center">Категории</h3>
+            <ul class="categories__ul d-flex p-0 flex-lg-nowrap flex-md-wrap">
+                <li class="categories__li">
+                    <h5 class="categories__subtitle text-center">Категория A</h5>
+                    <ul class="categories__inner-ul d-flex p-0 justify-content-between">
+                        <li class="categories__inner-li d-flex flex-column align-content-center">
+                            <img class="category__image mx-auto" src="assets/icons/moto-white.svg" alt="Мотоцикл">
+                            <h6 class="category__subtitle text-center">Начальный Курс
+                                <br>Онлайн</h6>
+                            <p class="category__list-title">Что входит в стоимость?</p>
+                            <ul class="category__list">
+                                <li class="category__list-item">-Теория</li>
+                                <li class="category__list-item">-Практика</li>
+                                <li class="category__list-item">-Литература</li>
+                                <li class="category__list-item">-Горюче-смазочные материалы</li>
+                                <li class="category__list-item">-Выезд менеджера</li>
+                                <li class="category__list-item">-Организованная сдача в ГИБДД</li>
+                            </ul>
+                            <p class="category__price">15000* Р</p>
+                            <p class="category__note">*Уже включен подарочный сертификат</p>
+                            <a class="link link_auto-width link_categories link_small" href="">Записаться</a>
+                        </li>
+                        <li class="categories__inner-li d-flex flex-column">
+                            <img class="category__image mx-auto" src="assets/icons/moto-black.svg" alt="Мотоцикл">
+                            <h6 class="category__subtitle text-center">Начальный Курс
+                                <br>Оффлайн</h6>
+                            <p class="category__list-title">Что входит в стоимость?</p>
+                            <ul class="category__list">
+                                <li class="category__list-item">-Теория</li>
+                                <li class="category__list-item">-Практика</li>
+                                <li class="category__list-item">-Литература</li>
+                                <li class="category__list-item">-Горюче-смазочные материалы</li>
+                                <li class="category__list-item">-Выезд менеджера</li>
+                                <li class="category__list-item">-Организованная сдача в ГИБДД</li>
+                            </ul>
+                            <p class="category__price">20000* Р</p>
+                            <p class="category__note">*Уже включен подарочный сертификат</p>
+                            <a class="link link_auto-width link_categories link_small" href="">Записаться</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="categories__li">
+                    <h5 class="categories__subtitle text-center">Категория B</h5>
+                    <ul class="categories__inner-ul d-flex">
+                        <li class="categories__inner-li d-flex flex-column">
+                            <img class="category__image mx-auto" src="assets/icons/car-white.svg" alt="Автомобиль">
+                            <h6 class="category__subtitle text-center">Начальный Курс
+                                <br>АКПП</h6>
+                            <p class="category__list-title">Что входит в стоимость?</p>
+                            <ul class="category__list">
+                                <li class="category__list-item">-Теория</li>
+                                <li class="category__list-item">-Практика</li>
+                                <li class="category__list-item">-Литература</li>
+                                <li class="category__list-item">-Горюче-смазочные материалы</li>
+                                <li class="category__list-item">-Выезд менеджера</li>
+                                <li class="category__list-item">-Организованная сдача в ГИБДД</li>
+                            </ul>
+                            <p class="category__price">24900* Р</p>
+                            <p class="category__note">*Уже включен подарочный сертификат</p>
+                            <a class="link link_auto-width link_categories link_small" href="">Записаться</a>
+                        </li>
+                        <li class="categories__inner-li d-flex flex-column">
+                            <img class="category__image mx-auto" src="assets/icons/car-black.svg" alt="Автомобиль">
+                            <h6 class="category__subtitle text-center">Начальный Курс
+                                <br>МКПП</h6>
+                            <p class="category__list-title">Что входит в стоимость?</p>
+                            <ul class="category__list">
+                                <li class="category__list-item">-Теория</li>
+                                <li class="category__list-item">-Практика</li>
+                                <li class="category__list-item">-Литература</li>
+                                <li class="category__list-item">-Горюче-смазочные материалы</li>
+                                <li class="category__list-item">-Выезд менеджера</li>
+                                <li class="category__list-item">-Организованная сдача в ГИБДД</li>
+                            </ul>
+                            <p class="category__price">21900* Р</p>
+                            <p class="category__note">*Уже включен подарочный сертификат</p>
+                            <a class="link link_auto-width link_categories link_small" href="">Записаться</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="facts">
+        <div class="container">
+            <h3 class="title-h3 text-center">Несколько фактов о нас</h3>
+            <ul class="facts__ul d-flex justify-content-between justify-content-lg-end p-0 flex-wrap">
+                <li class="d-flex col-xxl-3 col-lg-6 justify-content-center my-lg-5">
+                    <img class="facts__logo col-4 w-auto" src="assets/images/logo2.webp" alt="">
+                    <div class="fact__text-block d-flex col-xxl-8 col-lg-4 flex-column justify-content-center">
+                        <p class="facts__number">10</p>
+                        <p class="facts__text">лет обучаем на ву</p>
+                    </div>
+                </li>
+                <li class="d-flex col-xxl-3 col-lg-6 justify-content-center my-lg-5">
+                    <img class="facts__logo col-4 w-auto" src="assets/images/logo2.webp" alt="">
+                    <div class="fact__text-block d-flex col-xxl-8 col-lg-4 flex-column justify-content-center">
+                        <p class="facts__number">59</p>
+                        <p class="facts__text">учебных классов</p>
+                    </div>
+                </li>
+                <li class="d-flex col-xxl-3 col-lg-6 justify-content-center my-lg-5">
+                    <img class="facts__logo col-4 w-auto" src="assets/images/logo2.webp" alt="">
+                    <div class="fact__text-block d-flex col-xxl-8 col-lg-4 flex-column justify-content-center">
+                        <p class="facts__number">97</p>
+                        <p class="facts__text">учебных машин</p>
+                    </div>
+                </li>
+                <li class="d-flex col-xxl-3 col-lg-6 justify-content-center my-lg-5">
+                    <img class="facts__logo col-4 w-auto" src="assets/images/logo2.webp" alt="">
+                    <div class="fact__text-block d-flex col-xxl-8 col-lg-4 flex-column justify-content-center">
+                        <p class="facts__number">12053</p>
+                        <p class="facts__text">успешных водителя</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="branches-n-classes">
+        <section class="branches">
+            <div class="container">
+                <h3 class="title-h3 text-center">Наши филиалы</h3>
+                <p class="branches-description text-center">Отдельное преимущество — развитая сеть филиалов нашей
+                    автошколы в СПб. Все учебные
+                    аудитории и автодромы
+                    расположены у метро. Выбирайте ближайшую локацию к дому, месту работы или учебы.</p>
+                <div class="map"></div>
+                <ul class="branches__ul d-flex flex-wrap p-0 justify-content-between">
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Автово</a></li>
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Адмиралтейская</a></li>
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Академическая</a></li>
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Балтийская</a></li>
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Бухарестская</a></li>
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Василеостровская</a></li>
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Владимирская</a></li>
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Волковская</a></li>
+                    <li class="branches__li"><a class="branch__link link link_auto-width d-flex justify-content-center"
+                                                href="">Гражданский пр.</a></li>
+                </ul>
+                <a class="branches__link link link_auto-width link_small d-block m-auto col-4" href="">Показать все</a>
+            </div>
+        </section>
+        <section class="classes">
+            <div class="container">
+                <h3 class="title-h3 text-center">Наши классы</h3>
+                <div class="carousel"></div>
+            </div>
+        </section>
+    </div>
+    <section class="instructors">
+        <div class="container">
+            <h3 class="title-h3 text-center title-h3_white">Наши инструкторы</h3>
+            <ul class="instructors__ul d-flex p-0">
+                <li class="col-2 p-3">
+                    <img class="instructor__img col-12" src="assets/images/instructors/roman-sergeevich.webp"
+                         alt="Роман Сергеевич">
+                    <p class="instructor__text text-center">Роман Сергеевич</p>
+                </li>
+                <li class="col-2 p-3">
+                    <img class="instructor__img col-12" src="assets/images/instructors/vitaly-victorovich.webp"
+                         alt="Виталий Викторович">
+                    <p class="instructor__text text-center">Виталий Викторович</p>
+                </li>
+                <li class="col-2 p-3">
+                    <img class="instructor__img col-12" src="assets/images/instructors/nicolay-ivanovich.webp"
+                         alt="Николай Иванович">
+                    <p class="instructor__text text-center">Николай Иванович</p>
+                </li>
+                <li class="col-2 p-3">
+                    <img class="instructor__img col-12" src="assets/images/instructors/vasily-stepanovich.webp"
+                         alt="Василий Степанович">
+                    <p class="instructor__text text-center">Василий Степанович</p>
+                </li>
+                <li class="col-2 p-3">
+                    <img class="instructor__img col-12" src="assets/images/instructors/ivan-nicolaevich.webp"
+                         alt="Иван Николаевич">
+                    <p class="instructor__text text-center">Иван Николаевич</p>
+                </li>
+                <li class="col-2 p-3">
+                    <img class="instructor__img col-12" src="assets/images/instructors/sergey-vasilievich.webp"
+                         alt="Сергей Васильевич">
+                    <p class="instructor__text text-center">Сергей Васильевич</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="photos">
+        <div class="container">
+            <h3 class="title-h3 text-center">Наш автопарк</h3>
+            <div class="carousel"></div>
+            <h3 class="title-h3 text-center">Наши полигоны</h3>
+            <div class="carousel"></div>
+        </div>
+    </section>
+    <section class="documents">
+        <div class="container">
+            <h3 class="title-h3 text-center">Наши документы</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <div class="reviews-n-faq">
+        <section class="reviews">
+            <div class="container">
+                <h3 class="title-h3 text-center">Отзывы</h3>
+                <div id="reviews" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="d-flex justify-content-center">
+                                <img class="review__photo d-block col-3" src="assets/images/reviews/olga.webp" alt="Первый слайд">
+                                <div class="review__text-block d-flex col-5 flex-column justify-content-center">
+                                    <h5 class="review__title">Ольга, 22 года</h5>
+                                    <p class="review__text">Очень довольна, что решила сдать на права в СПб именно в этой школе. Цены не
+                                        кусачие, теорию прошла онлайн, а на площадку добиралась 10 минут после пар в
+                                        универе. Диплом журналиста приехала забирать уже на байке, жду свой второй
+                                        мотосезон))</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="d-flex justify-content-center">
+                                <img class="review__photo d-block col-3" src="assets/images/reviews/mariya.webp" alt="Второй слайд">
+                                <div class="review__text-block d-flex col-5 flex-column justify-content-center">
+                                    <h5 class="review__title">Мария, 27 лет</h5>
+                                    <p class="review__text">Училась в этой автошколе на категорию Б. Хочу отметить профессионализм преподавателей и тактичность инструкторов. Занятия проходят в абсолютном комфорте, без стресса. Сдала все экзамены с 1 раза!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="d-flex justify-content-center">
+                                <img class="review__photo d-block col-3" src="assets/images/reviews/iliya.webp" alt="Третий слайд">
+                                <div class="review__text-block d-flex col-5 flex-column justify-content-center">
+                                    <h5 class="review__title">Илья, 34 года</h5>
+                                    <p class="review__text">Среди всех автошкол в СПб выбирал по цене. Здесь недорого, можно платить частями. Компьютеры, машины — все отличное. Водить итак умел, нужна была “корочка”. Все вышло быстро и четко, график занятий удобный.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#reviews"
+                            data-bs-slide="prev">
+                        <img src="assets/icons/arrow-prev.svg" alt="Предыдущий">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#reviews"
+                            data-bs-slide="next">
+                        <img src="assets/icons/arrow-next.svg" alt="Следующий">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <h3 class="title-h3 text-center">Часто задаваемые вопросы</h3>
+                <div class="accordion" id="faq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseOne" aria-expanded="true" aria-controls="faq-collapseOne">
+                                <span class="accordion-question">Можно ли отучиться на права на мотоцикл в СПб онлайн?</span>
+                                <svg class="accordion-svg" width="56" height="17" viewBox="0 0 56 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 2L29 14.5L54.5 2" stroke="white" stroke-width="3"/>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="faq-collapseOne" class="accordion-collapse collapse" aria-labelledby="faq-headingOne">
+                            <div class="accordion-body">
+                                Теоретическую часть курса обучения на права категории А наши курсанты могут пройти дистанционно.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="faq-collapseTwo">
+                                <span class="accordion-question">Сколько стоит сдать на права в СПб студенту, стоимость не снижается?</span>
+                                <svg class="accordion-svg" width="56" height="17" viewBox="0 0 56 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 2L29 14.5L54.5 2" stroke="white" stroke-width="3"/>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="faq-collapseTwo" class="accordion-collapse collapse" aria-labelledby="faq-headingTwo">
+                            <div class="accordion-body">
+                                Для студентов стоимость обучения на права в СПб в нашей автошколе составляет… </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="faq-collapseThree">
+                                <span class="accordion-question">Сколько длятся курсы вождения автомобиля?</span>
+                                <svg class="accordion-svg" width="56" height="17" viewBox="0 0 56 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 2L29 14.5L54.5 2" stroke="white" stroke-width="3"/>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="faq-collapseThree" class="accordion-collapse collapse" aria-labelledby="faq-headingThree">
+                            <div class="accordion-body">
+                                Обучение водителей категории B длится от 2-х месяцев, водителей категории А - от 1 месяца. Все зависит от вашего индивидуального графика занятий. Важно отработать все часы по теории и практике.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="enroll">
+        <div class="container">
+            <div class="col-6">
+                <h3 class="title-h3 text-center">Записаться на обучение</h3>
+                <p class="text-center">Наш специалист свяжется с Вами в ближайшее время</p>
+                <form action="">
+
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__contacts d-flex justify-content-around">
+            <p class="contacts__phone my-0"><a class="phone__link" href="tel:+74995473223">+7 (499) 547-32-23</a>
+            </p>
+            <ul class="d-flex contacts__social justify-content-end my-0">
+                <li class="contacts__social-container"><a href=""><img src="assets/icons/vk.svg" alt="vk"></a></li>
+                <li class="contacts__social-container"><a href=""><img src="assets/icons/instagram.svg" alt="instagram"></a>
+                </li>
+                <li class="contacts__social-container"><a href=""><img src="assets/icons/telegram.svg"
+                                                                       alt="telegram"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js" async></script>
+</body>
+</html>
