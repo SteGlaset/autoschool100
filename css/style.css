@@ -38,8 +38,12 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 li {
@@ -98,7 +102,7 @@ a:hover {
 }
 
 .phone__link {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     font-weight: 500;
     color: #FFFFFF;
@@ -125,7 +129,7 @@ a:hover {
 .classes,
 .instructors,
 .photos,
-.documents,
+.rewards,
 .reviews,
 .faq,
 .enroll {
@@ -138,7 +142,6 @@ a:hover {
     background: url("../assets/images/car.webp") no-repeat 90% 90%, url("../assets/images/background/city-bg.webp") no-repeat right, url("../assets/images/background/autoschool-bg.webp") no-repeat;
     background-size: 691px 303px, contain, cover;
     margin-top: -93px;
-    /*40%*/
 }
 
 .autoschool__title {
@@ -290,6 +293,7 @@ a:hover {
 }
 
 .categories__inner-li {
+    width: calc(50% - 15px);
     background-color: #FFFFFF;
     padding: 30px 25px;
     border-top-right-radius: 10px;
@@ -404,10 +408,11 @@ a:hover {
 .branch__link::before {
     content: '';
     display: inline-block;
-    width: 28px;
-    height: 40px;
+    width: 2.8rem;
+    height: 4rem;
     margin-right: 14px;
     background: url("../assets/icons/point.svg") no-repeat;
+    background-size: 2.8rem 4rem;
 }
 
 .branches__link {
@@ -443,9 +448,50 @@ a:hover {
     background-size: cover;
 }
 
-.documents {
-    background: linear-gradient(rgba(254, 214, 31, 0.5), rgba(254, 214, 31, 0.5)), url("../assets/images/background/documents-bg.webp") no-repeat center;
+.photos__image {
+    height: 449px;
+    max-width: 100%;
+    margin-bottom: 22px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.autopark__description {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.polygons__title {
+    margin-top: 40px;
+}
+
+.rewards {
+    background: linear-gradient(rgba(254, 214, 31, 0.5), rgba(254, 214, 31, 0.5)), url("../assets/images/background/rewards-bg.webp") no-repeat center;
     background-size: cover;
+}
+
+.rewards__li {
+    width: 30%;
+    position: relative;
+    padding: 60px 15px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #FFF;
+    margin-top: 80px;
+}
+
+.reward__icon {
+    position: absolute;
+    max-height: 130px;
+    width: auto;
+    top: -70px;
+}
+
+.reward__description {
+    padding: 7px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .reviews-n-faq {
@@ -457,6 +503,8 @@ a:hover {
     height: 354px;
     width: auto;
     margin-right: 29px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .review__title {
@@ -563,6 +611,7 @@ a:hover {
 .footer {
     background: linear-gradient(90deg, rgba(225, 5, 5, 1), rgba(107, 0, 1, 1));
     padding: 32px 0;
+    margin-top: auto;
 }
 
 @media screen and (max-width: 1400px) {
@@ -610,28 +659,315 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
-    .navbar-toggler ~ .navbar-collapse {
-        position: absolute;
-        top: 50px;
+    .header {
+        position: relative;
+        background-color: #FFF;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 2;
     }
 
+    .navigation {
+        margin-left: 0;
+    }
 
+    .navbar-toggler ~ .navbar-collapse {
+        width: 96px;
+        position: absolute;
+        right: -7px;
+        top: 100%;
+        padding: 5px;
+        background-color: #FFF;
+        z-index: 4;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 16px;
+    }
 
-    .steps-ul__container:nth-child(even)::before {
+    .header__contacts {
+        height: calc(100px - 20px + 2rem);
+        bottom: calc(-100px + 20px - 2rem);
+    }
+
+    .studying {
+       background-size: 150%;
+    }
+
+    .steps-ul__container:nth-child(n)::before {
+        content: none;
+        display: none;
+    }
+
+    .steps-ul__li:not(:last-child)::before {
         content: "";
         display: block;
         position: absolute;
-        top: -24px;
-        left: -139px;
-        width: 106px;
-        height: 128px;
+        top: 69%;
+        left: -32px;
+        width: 32px;
+        height: 194px;
         border-left: 3px solid rgba(203, 4, 4, 1);
         border-bottom: 3px solid rgba(203, 4, 4, 1);
+        border-top: 3px solid rgba(203, 4, 4, 1);
         border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
     }
 
-    .steps-ul__container:nth-child(even)::before {
+    .categories__li {
+        width: 100%;
+    }
+
+    .categories__li.carousel-item {
+        margin-bottom: 25px;
+    }
+
+    .categories__inner-ul {
+        margin-bottom: 23px;
+    }
+
+    .categories__subtitle {
+        margin-bottom: 23px;
+    }
+
+    .carousel-indicators {
+        bottom: -5px;
+    }
+
+    .slide-box {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .carousel-indicators [data-bs-target]{
+        height: 20px;
+        width: 20px;
+        border: 0 solid transparent;
+        border-radius: 10px;
+    }
+
+    .photos__image {
+        height: 300px;
+    }
+
+    .reviews {
+        padding-bottom: 30px;
+    }
+
+    .review__photo {
+        width: 26%;
+        height: auto;
+    }
+
+    .review__text-block {
+        min-height: 230px;
+    }
+
+    .accordion-item {
+        padding: 25px 29px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 17px;
+    }
+
+    .autoschool {
+        background: url("../assets/images/car.webp") no-repeat 90% 90%, url("../assets/images/background/city-bg.webp") no-repeat 30vw, url("../assets/images/background/autoschool-bg.webp") no-repeat 50%;
+        background-size: 380px auto, cover, cover;
+    }
+
+    .categories__inner-li {
+        padding: 15px 10px;
+    }
+
+    .category__image {
+        width: 40%;
+        margin: -10px;
+    }
+
+    .categories__subtitle {
+        margin-bottom: 10px;
+    }
+
+    .category__list {
+        margin-bottom: 0;
+    }
+
+    .category__list-title {
+        margin-bottom: 10px;
+    }
+
+    .category__list-item {
+        margin-bottom: 5px;
+    }
+
+    .category__price {
+        margin-bottom: 10px;
+    }
+
+    .photos__image {
+        height: 230px;
+    }
+
+    .link_categories {
+        margin-bottom: 0;
+    }
+
+    .branch__link {
+        padding: 10px 13px;
+    }
+
+    .instructor__img {
+        margin-bottom: 7px;
+    }
+
+    .reviews {
+        padding-bottom: 0;
+    }
+
+    .review__photo {
+        margin-bottom: 15px;
+    }
+
+    .review__text-block {
+        min-height: 210px;
+    }
+
+    .accordion-item {
+        padding: 15px 17px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    html {
+        font-size: calc(6px + 5 * (100vw / 1440));
+    }
+
+    .link {
+        padding: 10px 56px;
+        font-size: 20px;
+    }
+
+    .link_small {
+        font-size: 20px;
+        padding: 5px 17px;
+    }
+
+    .autoschool {
+        background: url("../assets/images/car.webp") no-repeat 90% 80%, url("../assets/images/background/city-bg.webp") no-repeat 100%, url("../assets/images/background/autoschool-bg.webp") no-repeat 50%;
+        background-size: 380px auto, 70% 100%, cover;
+    }
+
+    .autoschool__title {
+        margin-top: 256px;
+        font-size: 4.8rem;
+    }
+    .autoschool__description {
+        font-size: 1.8rem;
+        margin-bottom: 263px;
+    }
+
+    .autoschool__link {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 271px;
+    }
+
+    .why-we__card {
+        width: 290px;
+        margin-right: 60px;
+    }
+
+    .why-we__text {
+        width: 80%;
+    }
+
+    .why-we__image {
+        left: 236px;
+    }
+
+    .studying__subtitle,
+    .studying__description {
+        text-align: center;
+    }
+
+    .facts__logo {
+        height: 57px;
+    }
+
+    .steps-ul__li {
+        margin-bottom: 26px;
+    }
+
+    .steps-ul__li:nth-child(n)::before {
         content: none;
         display: none;
+    }
+
+    .steps__image {
+        position: relative;
+        z-index: 4;
+    }
+
+    .steps-ul__li:nth-child(odd) .steps__img-container::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(20vw + 22% - 3vh);
+        left: 8%;
+        width: calc(20px + 8%);
+        height: calc(65% + 4vh);
+        border-left: 3px solid rgba(203, 4, 4, 1);
+        border-bottom: 3px solid rgba(203, 4, 4, 1);
+        border-top: 3px solid rgba(203, 4, 4, 1);
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .steps-ul__li:not(:last-child):nth-of-type(even) .steps__img-container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(20vw + 22% - 2vh);
+        right: 8%;
+        width: calc(4px + 8%);
+        height: calc(65% + 4vh);
+        border-right: 3px solid rgba(203, 4, 4, 1);
+        border-bottom: 3px solid rgba(203, 4, 4, 1);
+        border-top: 3px solid rgba(203, 4, 4, 1);
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .branch__link {
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+
+    .branch__link:before {
+        height: 20px;
+        width: 13px;
+        background-size: 13px 20px;
+        margin-right: 5px;
+    }
+
+    .review__text-block {
+        min-height: 230px;
+    }
+
+    .accordion-question {
+        width: 80%;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .accordion-body {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .photos__image {
+        height: 180px;
     }
 }
