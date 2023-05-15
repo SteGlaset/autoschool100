@@ -1,0 +1,42 @@
+User-agent: * 
+    
+Disallow: /manager/
+Disallow: /assets/components/
+Disallow: /core/
+Disallow: /connectors/
+Disallow: /index.php
+Disallow: /haha
+Disallow: /none
+Disallow: /account*
+Disallow: *?
+
+User-agent: GoogleBot     
+Disallow: /manager/
+Disallow: /assets/components/
+Disallow: /core/
+Disallow: /connectors/
+Disallow: /index.php
+Disallow: /haha
+Disallow: /none
+Disallow: /account*
+Disallow: *?
+
+User-agent: Yandex          
+Disallow: /manager/
+Disallow: /assets/components/
+Disallow: /core/
+Disallow: /connectors/
+Disallow: /index.php
+Disallow: /haha
+Disallow: /none
+Disallow: /account*
+Disallow: *?
+Clean-Param: utm_source&utm_medium&utm_campaign 
+Clean-Param: openstat       
+
+User-Agent: clickfrogbot
+Allow: /
+
+Sitemap: https://www.автошкола100.рф/sitemap.xml
+
+
